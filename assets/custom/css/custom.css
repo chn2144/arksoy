@@ -217,11 +217,9 @@ body{
     height: 40px;
     line-height: 38px;
 }
-.lang-dropdown{
-    top: 4px !important;
-}
-.lang-dropdown-btn:focus {
-    box-shadow: none !important;
+.lang-dropdown-btn,
+.lang-dropdown {
+    visibility: hidden !important;
 }
 .header-icon .fables-cart-number , .max-line-height .fables-cart-number{ 
     width: 18px;
