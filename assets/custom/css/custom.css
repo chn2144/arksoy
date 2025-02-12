@@ -3430,3 +3430,8 @@ a.toggle-menu{
     border-left: 0 !important;
     border-radius: 0;
 }
+
+.fables-logo {
+    max-height: 50px;
+    width: auto;
+}
