@@ -139,7 +139,7 @@ body{
 }
 /* start fables header */
 .header-fixed-height{
-    height: 90px;
+    height: 70px;
 }
 
 .fables-cart-number {
@@ -170,8 +170,13 @@ body{
     color: #2C3E4F !important;
 }
 .fables-header { 
-    padding: 33px 0;
-    background-image: url(../images/pages-header-background.jpg); 
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.fables-header .container {
+    position: relative;
+    z-index: 1;
 }
 .fables-after-overlay{
     position: relative; 
@@ -214,8 +219,7 @@ body{
     margin-bottom: 47px;
 }
 .fables-top-header-signin{
-    height: 40px;
-    line-height: 38px;
+    min-height: auto;
 }
 .lang-dropdown-btn,
 .lang-dropdown {
