@@ -533,12 +533,21 @@ body{
     color: #B4B4B4;
 }
 .fables-partner-carousel-img {
-    width: auto !important;
-    margin: 0 auto;
-    transition: all ease-in-out .3s;
-    -o-transition: all ease-in-out .3s;
-    -webkit-transition: all ease-in-out .3s;
-    transition: all ease-in-out .3s;
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    padding: 15px;
+    margin: auto;
+    filter: grayscale(0%);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 991px) {
+    .fables-partner-carousel-img {
+        height: 160px;
+        width: 160px;
+        padding: 10px;
+    }
 }
 #fables-partner-carousel .owl-nav div {
     background-color: transparent;

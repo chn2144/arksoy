@@ -38,6 +38,97 @@
     <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
     <link href="assets/custom/css/custom-responsive.css" rel="stylesheet">
     
+    <style>
+        .reference-logo {
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        
+        .reference-logo img {
+            max-width: 200px;
+            max-height: 200px;
+            width: 200px;
+            height: 200px;
+            transition: all 0.3s ease;
+            object-fit: contain;
+            padding: 10px;
+        }
+        
+        .reference-logo:hover img {
+            transform: scale(1.05);
+        }
+
+        .fables-partner-carousel-img {
+            max-width: 200px !important;
+            max-height: 200px !important;
+            width: 200px !important;
+            height: 200px !important;
+            transition: all 0.3s ease;
+            object-fit: contain;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        
+        .fables-partner-carousel-img:hover {
+            transform: scale(1.05);
+        }
+
+        .default-carousel .owl-stage {
+            display: flex;
+            align-items: center;
+        }
+
+        .references-carousel .owl-nav [class*=owl-] {
+            background-color: transparent;
+            color: #2C3E4F;
+            font-size: 20px;
+            padding: 5px;
+            width: 35px;
+            height: 35px;
+            line-height: 25px;
+            border: 1px solid #2C3E4F;
+            border-radius: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.3s ease;
+        }
+
+        .references-carousel .owl-nav .owl-prev {
+            left: -50px;
+        }
+
+        .references-carousel .owl-nav .owl-next {
+            right: -50px;
+        }
+
+        .references-carousel .owl-nav [class*=owl-]:hover {
+            background-color: #2C3E4F;
+            color: #fff;
+        }
+        
+        @media (max-width: 991px) {
+            .reference-logo {
+                height: 160px;
+                width: 160px;
+                padding: 10px;
+            }
+            .reference-logo img, .fables-partner-carousel-img {
+                max-width: 160px !important;
+                max-height: 160px !important;
+                width: 160px !important;
+                height: 160px !important;
+            }
+        }
+    </style>
      
 </head>
 
@@ -141,7 +232,7 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Referanslarımız</a>
+                                        <a class="nav-link" href="referanslarimiz.html">Referanslarımız</a>
                                     </li>
 
                                     <li class="nav-item">
@@ -149,7 +240,7 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">İletişim</a>
+                                        <a class="nav-link" href="iletisim.html">İletişim</a>
                                     </li>
                                 </ul>
 
@@ -494,48 +585,81 @@
            </div>
        </div>
        <div class="fables-light-background-color py-3 py-md-4 py-lg-5">
-           <div class="container my-4 my-lg-5" style="margin-top: 0!important;">
+           <div class="container">
                <div class="row">
                    <div class="col-12">
                        <h2 class="font-35 font-weight-bold fables-main-text-color my-3 my-lg-5 my-md-4 text-center">Referanslarımız</h2>
                    </div>
                </div>
-               <div class="owl-carousel owl-theme nav-0 carousel-items-6 dots-0">
-                  <div> 
-                      <img src="assets/custom/images/brand-4.jpg" alt="Fables Template" class="border-hover fables-partner-carousel-img">  
-                  </div>
-                  <div> 
-                      <img src="assets/custom/images/brand-4.jpg" alt="Fables Template" class="border-hover fables-partner-carousel-img">  
-                  </div>
-                  <div> 
-                      <img src="assets/custom/images/brand-4.jpg" alt="Fables Template" class="border-hover fables-partner-carousel-img">  
-                  </div>
-                  <div> 
-                      <img src="assets/custom/images/brand-4.jpg" alt="Fables Template" class="border-hover fables-partner-carousel-img">  
-                  </div>
-                  <div> 
-                      <img src="assets/custom/images/brand-4.jpg" alt="Fables Template" class="border-hover fables-partner-carousel-img">  
-                  </div>
-                  <div> 
-                      <img src="assets/custom/images/brand-4.jpg" alt="Fables Template" class="border-hover fables-partner-carousel-img">  
-                  </div>
-                  <div> 
-                      <img src="assets/custom/images/brand-4.jpg" alt="Fables Template" class="border-hover fables-partner-carousel-img">  
-                  </div>
-                  <div> 
-                      <img src="assets/custom/images/brand-4.jpg" alt="Fables Template" class="border-hover fables-partner-carousel-img">  
-                  </div>
-                  <div> 
-                      <img src="assets/custom/images/brand-4.jpg" alt="Fables Template" class="fborder-hover ables-partner-carousel-img">  
-                  </div>
-
-                </div>  
+               <div class="owl-carousel owl-theme references-carousel nav-0 dots-0 my-4 my-lg-5">
+                   <div class="item">
+                       <div class="reference-logo">
+                           <img src="assets/arksoy/references/caykur.jpg" alt="Çaykur" class="fables-partner-carousel-img">
+                       </div>
+                   </div>
+                   <div class="item">
+                       <div class="reference-logo">
+                           <img src="assets/arksoy/references/didi.png" alt="didi" class="fables-partner-carousel-img">
+                       </div>
+                   </div>
+                   <div class="item">
+                       <div class="reference-logo">
+                           <img src="assets/arksoy/references/boyner.png" alt="Boyner" class="fables-partner-carousel-img">
+                       </div>
+                   </div>
+                   <div class="item">
+                       <div class="reference-logo">
+                           <img src="assets/arksoy/references/vakko.png" alt="Vakko" class="fables-partner-carousel-img">
+                       </div>
+                   </div>
+                   <div class="item">
+                       <div class="reference-logo">
+                           <img src="assets/arksoy/references/a101.png" alt="A101" class="fables-partner-carousel-img">
+                       </div>
+                   </div>
+                   <div class="item">
+                       <div class="reference-logo">
+                           <img src="assets/arksoy/references/hopi.jpg" alt="Hopi" class="fables-partner-carousel-img">
+                       </div>
+                   </div>
+                   <div class="item">
+                       <div class="reference-logo">
+                           <img src="assets/arksoy/references/beymen.png" alt="Beymen" class="fables-partner-carousel-img">
+                       </div>
+                   </div>
+                   <div class="item">
+                       <div class="reference-logo">
+                           <img src="assets/arksoy/references/network.png" alt="Network" class="fables-partner-carousel-img">
+                       </div>
+                   </div>
+                   <div class="item">
+                       <div class="reference-logo">
+                           <img src="assets/arksoy/references/memorial.png" alt="Memorial" class="fables-partner-carousel-img">
+                       </div>
+                   </div>
+                   <div class="item">
+                       <div class="reference-logo">
+                           <img src="assets/arksoy/references/wcollection.png" alt="W Collection" class="fables-partner-carousel-img">
+                       </div>
+                   </div>
+                   <div class="item">
+                       <div class="reference-logo">
+                           <img src="assets/arksoy/references/divarese.png" alt="Divarese" class="fables-partner-carousel-img">
+                       </div>
+                   </div>
+                   <div class="item">
+                       <div class="reference-logo">
+                           <img src="assets/arksoy/references/englishhome.png" alt="English Home" class="fables-partner-carousel-img">
+                       </div>
+                   </div>
+               </div>
            </div>
        </div>
      
 </div>
 <!-- /End page content -->
     
+
 <!-- Start Footer 2 Background Image  -->
 <div class="fables-footer-image fables-after-overlay white-color py-4 py-lg-5 bg-rules">
     <div class="container">
@@ -554,7 +678,7 @@
                 <h2 class="font-20 semi-font fables-second-border-color border-bottom pb-3">İletişim Bilgileri</h2>
                <div class="my-3">
                     <h4 class="font-16 semi-font"><span class="fables-iconmap-icon fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span> Adres</h4>
-                    <p class="font-14 fables-fifth-text-color mt-2 ml-4">Aşık Veysel Mah. Vedat Altun Sk. A9/1D Blok D:4 Erguvan Evleri Esenyurt/İstanbul</p>
+                    <p class="font-14 fables-fifth-text-color mt-2 ml-4">Akçaburgaz Mah. 3106 Sk. No: 17 Baskı Tesisleri Binası Esenyurt/İstanbul</p>
                 </div>
                 <div class="my-3">
                     <h4 class="font-16 semi-font"><span class="fables-iconphone fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span> Telefon </h4>
@@ -571,9 +695,9 @@
                     <li><a href="index.html">Anasayfa</a></li>
                     <li><a href="hakkimizda.html">Hakkımızda</a></li>
                     <li><a href="#">Hizmetlerimiz</a></li>
-                    <li><a href="#">Referanslarımız</a></li>
+                    <li><a href="referanslarimiz.html">Referanslarımız</a></li>
                     <li><a href="#">Galeri</a></li>
-                    <li><a href="#">İletişim</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
                 </ul>
             </div>
                       
@@ -616,6 +740,28 @@ $(document).ready(function(){
     // Yıl bilgisini otomatik güncelle
     document.getElementById('current-year').textContent = new Date().getFullYear();
     
+    // Partner carousel ayarları
+    $(".references-carousel").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        margin: 20,
+        nav: true,
+        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+        dots: false,
+        responsive:{
+            0:{
+                items: 2
+            },
+            600:{
+                items: 3
+            },
+            1000:{
+                items: 5
+            }
+        }
+    });
+
     // Sayfa yüklendiğinde veya yenilendiğinde en üste git
     window.onbeforeunload = function () {
         window.scrollTo(0, 0);
