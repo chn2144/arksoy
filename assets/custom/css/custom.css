@@ -3448,3 +3448,15 @@ a.toggle-menu{
     max-height: 50px;
     width: auto;
 }
+
+.filter-img-block {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.filter-img-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
